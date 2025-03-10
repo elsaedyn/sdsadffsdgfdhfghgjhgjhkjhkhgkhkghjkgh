@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑬𝑳𝑺𝑨𝑬𝑫𝒀𝑵 - الصيادين</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: red;
+            font-family: 'Creepster', cursive;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, h2 {
+            font-size: 60px;
+            text-shadow: 0 0 20px red;
+            animation: floatText 3s infinite alternate ease-in-out;
+        }
+        .blood {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://raw.githubusercontent.com/CodeX424/elsaedyn/refs/heads/main/mm5ng6nk.png') no-repeat center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+        .glitch {
+            animation: glitch 1s infinite alternate;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 4px 4px red, -4px -4px black; }
+            100% { text-shadow: -4px -4px red, 4px 4px black; }
+        }
+        @keyframes floatText {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(10px); }
+        }
+        .list-container {
+            position: relative;
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border: 2px solid red;
+            width: 60%;
+            box-shadow: 0 0 20px red;
+            animation: floatText 3s infinite alternate ease-in-out;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 24px;
+            padding: 10px;
+            border-bottom: 1px solid red;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .request-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background: red;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px red;
+            transition: 0.3s;
+            animation: flicker 1s infinite alternate;
+        }
+        .request-button:hover {
+            background: darkred;
+            box-shadow: 0 0 30px darkred;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        .warning {
+            margin-top: 10px;
+            font-size: 18px;
+            color: darkred;
+            text-shadow: 0 0 10px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blood"></div>
+        <h1 class="glitch">𝑬𝑳𝑺𝑨𝑬𝑫𝒀𝑵</h1>
+        <h2 class="glitch">ألصيأدين</h2>
+        <div class="list-container">
+            <h2 class="glitch">ماذا نستطيع فعله؟</h2>
+            <ul>
+                <li>🔓 كسر حماية ملفات RAR و ZIP</li>
+                <li>🛑 فايروس تشفير كل الملفات بكلمة سر</li>
+                <li>📱 فيروسات لأجهزة الهاتف</li>
+                <li>💻 اختراق حسابات جميع مواقع التواصل</li>
+            </ul>
+            <button class="request-button" onclick="window.location.href='https://your-service-link.com';">طلب خدمة</button>
+            <p class="warning">⚠ لا تحاول المزاح في هذه الأشياء، لا تضغط إلا وأنت جاد! ⚠</p>
+        </div>
+    </div>
+</body>
+</html>
