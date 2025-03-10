@@ -29,7 +29,6 @@
         h1, h2 {
             font-size: 8vw;
             text-shadow: 0 0 20px red;
-            animation: floatText 3s infinite alternate ease-in-out;
         }
         .blood {
             position: absolute;
@@ -40,15 +39,15 @@
             opacity: 0.5;
         }
         .glitch {
-            animation: glitch 1.5s infinite alternate;
+            animation: glitch 1s infinite alternate;
         }
         @keyframes glitch {
-            0% { text-shadow: 2px 2px red, -2px -2px black; }
-            100% { text-shadow: -2px -2px red, 2px 2px black; }
+            0% { text-shadow: 4px 4px red, -4px -4px black; }
+            100% { text-shadow: -4px -4px red, 4px 4px black; }
         }
         @keyframes floatText {
             0% { transform: translateY(0px); }
-            100% { transform: translateY(5px); }
+            100% { transform: translateY(10px); }
         }
         .list-container {
             position: relative;
@@ -86,7 +85,7 @@
             text-transform: uppercase;
             box-shadow: 0 0 15px red;
             transition: 0.3s;
-            animation: flicker 1.5s infinite alternate;
+            animation: flicker 1s infinite alternate;
         }
         .request-button:hover {
             background: darkred;
@@ -94,7 +93,7 @@
         }
         @keyframes flicker {
             0% { opacity: 1; }
-            50% { opacity: 0.8; }
+            50% { opacity: 0.6; }
             100% { opacity: 1; }
         }
         .warning {
@@ -109,10 +108,10 @@
 <body>
     <div class="container">
         <div class="blood"></div>
-        <h1 class="glitch">𝑬𝑳𝑺𝑨𝑬𝑫𝒀𝑵</h1>
-        <h2 class="glitch">ألصيأدين</h2>
+        <h1>𝑬𝑳𝑺𝑨𝑬𝑫𝒀𝑵</h1>
+        <h2>ألصيأدين</h2>
         <div class="list-container">
-            <h2 class="glitch">ماذا نستطيع فعله؟</h2>
+            <h2>ماذا نستطيع فعله؟</h2>
             <ul>
                 <li>🔓 كسر حماية ملفات RAR و ZIP</li>
                 <li>🛑 فايروس تشفير كل الملفات بكلمة سر</li>
