@@ -14,18 +14,20 @@
             color: red;
             font-family: 'Creepster', cursive;
             text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         .container {
             position: relative;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1, h2 {
-            font-size: 60px;
+            font-size: 8vw;
             text-shadow: 0 0 20px red;
             animation: floatText 3s infinite alternate ease-in-out;
         }
@@ -50,11 +52,12 @@
         }
         .list-container {
             position: relative;
-            margin-top: 50px;
+            margin-top: 30px;
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border: 2px solid red;
-            width: 60%;
+            width: 90%;
+            max-width: 600px;
             box-shadow: 0 0 20px red;
             animation: floatText 3s infinite alternate ease-in-out;
         }
@@ -63,7 +66,8 @@
             padding: 0;
         }
         li {
-            font-size: 24px;
+            font-size: 5vw;
+            max-font-size: 24px;
             padding: 10px;
             border-bottom: 1px solid red;
         }
@@ -73,7 +77,8 @@
         .request-button {
             margin-top: 20px;
             padding: 15px 30px;
-            font-size: 20px;
+            font-size: 5vw;
+            max-font-size: 20px;
             color: white;
             background: red;
             border: none;
@@ -94,7 +99,8 @@
         }
         .warning {
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 4vw;
+            max-font-size: 18px;
             color: darkred;
             text-shadow: 0 0 10px red;
         }
