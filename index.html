@@ -341,8 +341,8 @@
             }
             
             noise();
-            
-            noiseTimer = setInterval(noise, 900);
+            // سرعة التشويش: كل 100ms بدل 900ms
+            noiseTimer = setInterval(noise, 100);
         }
         
         startUrlNoise();
